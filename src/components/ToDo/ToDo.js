@@ -6,8 +6,8 @@ import { getRandomId } from "@/utils";
 
 const ToDo = () => {
   const data = [
-    { text: "Weed front garden.", isComplete: false, id: 1 },
-    { text: "Some task", isComplete: true, id: 2 },
+    { text: "Weed front garden.", isComplete: false, id: getRandomId() },
+    { text: "Some task", isComplete: true, id: getRandomId() },
   ];
   const [taskList, setTaskList] = useState(data);
   const onUpdateTask = ({ taskId, isComplete }) => {
