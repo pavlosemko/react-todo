@@ -1,3 +1,4 @@
+import "./to-do-item.css";
 const ToDoItem = ({ task, onUpdateTask }) => {
   const onToggleComplete = () => {
     onUpdateTask({
